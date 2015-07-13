@@ -1,4 +1,4 @@
-# OTS REST API for Java 
+# OTS REST API for iOS 
 
 A simple HTTP based RESTful API library will enable your apps to send emails and sms messages, make phone calls, and setup two-factor authentication through [OTS Cloud Communication Platform] (http://www.otsdc.com/en/site/login)
 
