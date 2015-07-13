@@ -1,0 +1,930 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		59067E651B4E20260068304A /* MessageGetScheduledResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E641B4E20260068304A /* MessageGetScheduledResponse.m */; };
+		59067E681B4E21440068304A /* MessageDetailGetScheduled.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E671B4E21440068304A /* MessageDetailGetScheduled.m */; };
+		59067E6B1B4E23AF0068304A /* MessageGetScheduledRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E6A1B4E23AF0068304A /* MessageGetScheduledRequest.m */; };
+		59067E6E1B4E2C3E0068304A /* MessageStopScheduled.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E6D1B4E2C3E0068304A /* MessageStopScheduled.m */; };
+		59067E711B4E35F80068304A /* AccountGetBalance.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E701B4E35F80068304A /* AccountGetBalance.m */; };
+		59067E741B4E42980068304A /* AccountUrlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E731B4E42980068304A /* AccountUrlImpl.m */; };
+		59067E771B4E44870068304A /* AccountResourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E761B4E44870068304A /* AccountResourceImpl.m */; };
+		59067E7A1B4E46150068304A /* AccountAddSenderID.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E791B4E46150068304A /* AccountAddSenderID.m */; };
+		59067E7D1B4E48AD0068304A /* AccountGetSenderIDStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E7C1B4E48AD0068304A /* AccountGetSenderIDStatus.m */; };
+		59067E801B4E49610068304A /* AccountGetSenderIDs.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E7F1B4E49610068304A /* AccountGetSenderIDs.m */; };
+		59067E831B4E4A700068304A /* AccountDeleteSenderID.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E821B4E4A700068304A /* AccountDeleteSenderID.m */; };
+		59067E861B4E4C2B0068304A /* AccountGetAppDefaultSenderID.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E851B4E4C2B0068304A /* AccountGetAppDefaultSenderID.m */; };
+		59067E891B4E4C810068304A /* AccountChangeAppDefaultSenderID.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E881B4E4C810068304A /* AccountChangeAppDefaultSenderID.m */; };
+		59067E8E1B4E56F30068304A /* AccountTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E8D1B4E56F30068304A /* AccountTests.m */; };
+		59067E911B4E5CCB0068304A /* AccountGetSenderIDResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59067E901B4E5CCB0068304A /* AccountGetSenderIDResponse.m */; };
+		5911BC3A1B4F39AD00F93216 /* CallsDetailsData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC391B4F39AD00F93216 /* CallsDetailsData.m */; };
+		5911BC3D1B4F3CF900F93216 /* CallTTSRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC3C1B4F3CF900F93216 /* CallTTSRequest.m */; };
+		5911BC401B4F40A600F93216 /* CallTTSResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC3F1B4F40A600F93216 /* CallTTSResponse.m */; };
+		5911BC431B4F45B300F93216 /* CallGetScheduledRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC421B4F45B300F93216 /* CallGetScheduledRequest.m */; };
+		5911BC461B4F471600F93216 /* CallGetScheduledResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC451B4F471600F93216 /* CallGetScheduledResponse.m */; };
+		5911BC491B4F495800F93216 /* CallStopScheduledResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC481B4F495800F93216 /* CallStopScheduledResponse.m */; };
+		5911BC4C1B4F4F1A00F93216 /* CallUrlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC4B1B4F4F1A00F93216 /* CallUrlImpl.m */; };
+		5911BC4F1B4F540300F93216 /* CallResourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC4E1B4F540300F93216 /* CallResourceImpl.m */; };
+		5911BC511B4F7B0400F93216 /* CallTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC501B4F7B0400F93216 /* CallTests.m */; };
+		5911BC581B4FA06500F93216 /* EmailSendRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC571B4FA06500F93216 /* EmailSendRequest.m */; };
+		5911BC5B1B4FA10500F93216 /* EmailSendResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC5A1B4FA10500F93216 /* EmailSendResponse.m */; };
+		5911BC5E1B4FA22600F93216 /* EmailGetReportRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC5D1B4FA22600F93216 /* EmailGetReportRequest.m */; };
+		5911BC611B4FA35700F93216 /* EmailGetReportResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC601B4FA35700F93216 /* EmailGetReportResponse.m */; };
+		5911BC641B4FA4C400F93216 /* EmailUrlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC631B4FA4C400F93216 /* EmailUrlImpl.m */; };
+		5911BC671B4FA54D00F93216 /* EmailResourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC661B4FA54D00F93216 /* EmailResourceImpl.m */; };
+		5911BC691B4FA75F00F93216 /* EmailTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC681B4FA75F00F93216 /* EmailTests.m */; };
+		5911BC6D1B4FABEA00F93216 /* VerifyGetCodeRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC6C1B4FABEA00F93216 /* VerifyGetCodeRequest.m */; };
+		5911BC701B4FAE0000F93216 /* VerifyGetCodeResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC6F1B4FAE0000F93216 /* VerifyGetCodeResponse.m */; };
+		5911BC731B4FAFD400F93216 /* VerifyNumberResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC721B4FAFD400F93216 /* VerifyNumberResponse.m */; };
+		5911BC761B4FB08700F93216 /* VerifyUrlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC751B4FB08700F93216 /* VerifyUrlImpl.m */; };
+		5911BC791B4FB0FF00F93216 /* VerifyResourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC781B4FB0FF00F93216 /* VerifyResourceImpl.m */; };
+		5911BC7B1B4FB29700F93216 /* VerifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC7A1B4FB29700F93216 /* VerifyTests.m */; };
+		5911BC7F1B4FBED300F93216 /* CheckerCheckNumberResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC7E1B4FBED300F93216 /* CheckerCheckNumberResponse.m */; };
+		5911BC821B4FBFC600F93216 /* CheckerUrlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC811B4FBFC600F93216 /* CheckerUrlImpl.m */; };
+		5911BC851B4FC02D00F93216 /* CheckerResourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC841B4FC02D00F93216 /* CheckerResourceImpl.m */; };
+		5911BC871B4FC10500F93216 /* CheckerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5911BC861B4FC10500F93216 /* CheckerTests.m */; };
+		598D9AA81B4CF60B00D7FBD3 /* MessageIDStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 598D9AA71B4CF60B00D7FBD3 /* MessageIDStatus.m */; };
+		598D9AAB1B4D034400D7FBD3 /* MessageDetailsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 598D9AAA1B4D034400D7FBD3 /* MessageDetailsRequest.m */; };
+		598D9AAE1B4D0AFA00D7FBD3 /* MessageDetailsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 598D9AAD1B4D0AFA00D7FBD3 /* MessageDetailsResponse.m */; };
+		598D9AB11B4D0D0100D7FBD3 /* MessageDetailsStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 598D9AB01B4D0D0100D7FBD3 /* MessageDetailsStatus.m */; };
+		598D9AB41B4D357100D7FBD3 /* MessageReportRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 598D9AB31B4D357100D7FBD3 /* MessageReportRequest.m */; };
+		598D9AB71B4D3BD400D7FBD3 /* MessageReportResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 598D9AB61B4D3BD400D7FBD3 /* MessageReportResponse.m */; };
+		59F8438A1B4A3D5A00E11484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F843891B4A3D5A00E11484 /* Foundation.framework */; };
+		59F843981B4A3D5B00E11484 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F843971B4A3D5B00E11484 /* XCTest.framework */; };
+		59F843991B4A3D5B00E11484 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F843891B4A3D5A00E11484 /* Foundation.framework */; };
+		59F8439B1B4A3D5B00E11484 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F8439A1B4A3D5B00E11484 /* UIKit.framework */; };
+		59F8439E1B4A3D5B00E11484 /* libSmsVoice.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 59F843861B4A3D5A00E11484 /* libSmsVoice.a */; };
+		59F843A41B4A3D5B00E11484 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 59F843A21B4A3D5B00E11484 /* InfoPlist.strings */; };
+		59F843A61B4A3D5B00E11484 /* SmsVoiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843A51B4A3D5B00E11484 /* SmsVoiceTests.m */; };
+		59F843B11B4A3FFE00E11484 /* OTSRestResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843B01B4A3FFE00E11484 /* OTSRestResponse.m */; };
+		59F843B31B4A507E00E11484 /* MessagesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843B21B4A507E00E11484 /* MessagesTests.m */; };
+		59F843B61B4A5EC900E11484 /* ConstantCallLang.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843B51B4A5EC900E11484 /* ConstantCallLang.m */; };
+		59F843B91B4A5F7D00E11484 /* ConstantCallStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843B81B4A5F7D00E11484 /* ConstantCallStatus.m */; };
+		59F843BC1B4A606400E11484 /* ConstantDLR.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843BB1B4A606400E11484 /* ConstantDLR.m */; };
+		59F843BF1B4A619600E11484 /* ConstantEmailStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843BE1B4A619600E11484 /* ConstantEmailStatus.m */; };
+		59F843C21B4A622A00E11484 /* ConstantMessageStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843C11B4A622A00E11484 /* ConstantMessageStatus.m */; };
+		59F843C51B4A630700E11484 /* ConstantParam.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843C41B4A630700E11484 /* ConstantParam.m */; };
+		59F843C81B4A67F700E11484 /* ModelARequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843C71B4A67F700E11484 /* ModelARequest.m */; };
+		59F843CB1B4A6A4C00E11484 /* ModelResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843CA1B4A6A4C00E11484 /* ModelResponse.m */; };
+		59F843D91B4A7CB100E11484 /* CallRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843D81B4A7CB100E11484 /* CallRequest.m */; };
+		59F843DC1B4A7D3900E11484 /* CallResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843DB1B4A7D3900E11484 /* CallResponse.m */; };
+		59F843DF1B4A7ED800E11484 /* CallStatusResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843DE1B4A7ED800E11484 /* CallStatusResponse.m */; };
+		59F843E21B4A800700E11484 /* CallsDetailsRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843E11B4A800700E11484 /* CallsDetailsRequest.m */; };
+		59F843E51B4A804C00E11484 /* CallsDetailsResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843E41B4A804C00E11484 /* CallsDetailsResponse.m */; };
+		59F843E91B4A84A100E11484 /* MessageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843E81B4A84A100E11484 /* MessageResponse.m */; };
+		59F843EC1B4A85B400E11484 /* MessageRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843EB1B4A85B400E11484 /* MessageRequest.m */; };
+		59F843F51B4BD1FA00E11484 /* MessageResourceImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843F41B4BD1FA00E11484 /* MessageResourceImpl.m */; };
+		59F843F91B4BD33100E11484 /* MessageUrlImpl.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843F81B4BD33100E11484 /* MessageUrlImpl.m */; };
+		59F843FC1B4BD79000E11484 /* AResource.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843FB1B4BD79000E11484 /* AResource.m */; };
+		59F843FF1B4BD7FE00E11484 /* HttpSender.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F843FE1B4BD7FE00E11484 /* HttpSender.m */; };
+		59F844031B4C310700E11484 /* JsonParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F844021B4C310700E11484 /* JsonParser.m */; };
+		59F844061B4C659E00E11484 /* BulkRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F844051B4C659E00E11484 /* BulkRequest.m */; };
+		59F844091B4C6BA900E11484 /* BulkResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F844081B4C6BA900E11484 /* BulkResponse.m */; };
+		59F8440C1B4C6E0400E11484 /* BulkMessageStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 59F8440B1B4C6E0400E11484 /* BulkMessageStatus.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		59F8439C1B4A3D5B00E11484 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 59F8437E1B4A3D5A00E11484 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 59F843851B4A3D5A00E11484;
+			remoteInfo = SmsVoice;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		59F843841B4A3D5A00E11484 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		59067E631B4E20260068304A /* MessageGetScheduledResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageGetScheduledResponse.h; sourceTree = "<group>"; };
+		59067E641B4E20260068304A /* MessageGetScheduledResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageGetScheduledResponse.m; sourceTree = "<group>"; };
+		59067E661B4E21440068304A /* MessageDetailGetScheduled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailGetScheduled.h; sourceTree = "<group>"; };
+		59067E671B4E21440068304A /* MessageDetailGetScheduled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailGetScheduled.m; sourceTree = "<group>"; };
+		59067E691B4E23AF0068304A /* MessageGetScheduledRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageGetScheduledRequest.h; sourceTree = "<group>"; };
+		59067E6A1B4E23AF0068304A /* MessageGetScheduledRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageGetScheduledRequest.m; sourceTree = "<group>"; };
+		59067E6C1B4E2C3E0068304A /* MessageStopScheduled.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageStopScheduled.h; sourceTree = "<group>"; };
+		59067E6D1B4E2C3E0068304A /* MessageStopScheduled.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageStopScheduled.m; sourceTree = "<group>"; };
+		59067E6F1B4E35F80068304A /* AccountGetBalance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountGetBalance.h; sourceTree = "<group>"; };
+		59067E701B4E35F80068304A /* AccountGetBalance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountGetBalance.m; sourceTree = "<group>"; };
+		59067E721B4E42980068304A /* AccountUrlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountUrlImpl.h; sourceTree = "<group>"; };
+		59067E731B4E42980068304A /* AccountUrlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountUrlImpl.m; sourceTree = "<group>"; };
+		59067E751B4E44870068304A /* AccountResourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountResourceImpl.h; sourceTree = "<group>"; };
+		59067E761B4E44870068304A /* AccountResourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountResourceImpl.m; sourceTree = "<group>"; };
+		59067E781B4E46150068304A /* AccountAddSenderID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountAddSenderID.h; sourceTree = "<group>"; };
+		59067E791B4E46150068304A /* AccountAddSenderID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountAddSenderID.m; sourceTree = "<group>"; };
+		59067E7B1B4E48AD0068304A /* AccountGetSenderIDStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountGetSenderIDStatus.h; sourceTree = "<group>"; };
+		59067E7C1B4E48AD0068304A /* AccountGetSenderIDStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountGetSenderIDStatus.m; sourceTree = "<group>"; };
+		59067E7E1B4E49610068304A /* AccountGetSenderIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountGetSenderIDs.h; sourceTree = "<group>"; };
+		59067E7F1B4E49610068304A /* AccountGetSenderIDs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountGetSenderIDs.m; sourceTree = "<group>"; };
+		59067E811B4E4A700068304A /* AccountDeleteSenderID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountDeleteSenderID.h; sourceTree = "<group>"; };
+		59067E821B4E4A700068304A /* AccountDeleteSenderID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountDeleteSenderID.m; sourceTree = "<group>"; };
+		59067E841B4E4C2B0068304A /* AccountGetAppDefaultSenderID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountGetAppDefaultSenderID.h; sourceTree = "<group>"; };
+		59067E851B4E4C2B0068304A /* AccountGetAppDefaultSenderID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountGetAppDefaultSenderID.m; sourceTree = "<group>"; };
+		59067E871B4E4C810068304A /* AccountChangeAppDefaultSenderID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountChangeAppDefaultSenderID.h; sourceTree = "<group>"; };
+		59067E881B4E4C810068304A /* AccountChangeAppDefaultSenderID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountChangeAppDefaultSenderID.m; sourceTree = "<group>"; };
+		59067E8D1B4E56F30068304A /* AccountTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountTests.m; sourceTree = "<group>"; };
+		59067E8F1B4E5CCB0068304A /* AccountGetSenderIDResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AccountGetSenderIDResponse.h; sourceTree = "<group>"; };
+		59067E901B4E5CCB0068304A /* AccountGetSenderIDResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AccountGetSenderIDResponse.m; sourceTree = "<group>"; };
+		5911BC381B4F39AD00F93216 /* CallsDetailsData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallsDetailsData.h; sourceTree = "<group>"; };
+		5911BC391B4F39AD00F93216 /* CallsDetailsData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallsDetailsData.m; sourceTree = "<group>"; };
+		5911BC3B1B4F3CF900F93216 /* CallTTSRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallTTSRequest.h; sourceTree = "<group>"; };
+		5911BC3C1B4F3CF900F93216 /* CallTTSRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallTTSRequest.m; sourceTree = "<group>"; };
+		5911BC3E1B4F40A600F93216 /* CallTTSResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallTTSResponse.h; sourceTree = "<group>"; };
+		5911BC3F1B4F40A600F93216 /* CallTTSResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallTTSResponse.m; sourceTree = "<group>"; };
+		5911BC411B4F45B300F93216 /* CallGetScheduledRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallGetScheduledRequest.h; sourceTree = "<group>"; };
+		5911BC421B4F45B300F93216 /* CallGetScheduledRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallGetScheduledRequest.m; sourceTree = "<group>"; };
+		5911BC441B4F471600F93216 /* CallGetScheduledResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallGetScheduledResponse.h; sourceTree = "<group>"; };
+		5911BC451B4F471600F93216 /* CallGetScheduledResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallGetScheduledResponse.m; sourceTree = "<group>"; };
+		5911BC471B4F495800F93216 /* CallStopScheduledResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallStopScheduledResponse.h; sourceTree = "<group>"; };
+		5911BC481B4F495800F93216 /* CallStopScheduledResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallStopScheduledResponse.m; sourceTree = "<group>"; };
+		5911BC4A1B4F4F1A00F93216 /* CallUrlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallUrlImpl.h; sourceTree = "<group>"; };
+		5911BC4B1B4F4F1A00F93216 /* CallUrlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallUrlImpl.m; sourceTree = "<group>"; };
+		5911BC4D1B4F540300F93216 /* CallResourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallResourceImpl.h; sourceTree = "<group>"; };
+		5911BC4E1B4F540300F93216 /* CallResourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallResourceImpl.m; sourceTree = "<group>"; };
+		5911BC501B4F7B0400F93216 /* CallTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallTests.m; sourceTree = "<group>"; };
+		5911BC561B4FA06500F93216 /* EmailSendRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailSendRequest.h; sourceTree = "<group>"; };
+		5911BC571B4FA06500F93216 /* EmailSendRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailSendRequest.m; sourceTree = "<group>"; };
+		5911BC591B4FA10500F93216 /* EmailSendResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailSendResponse.h; sourceTree = "<group>"; };
+		5911BC5A1B4FA10500F93216 /* EmailSendResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailSendResponse.m; sourceTree = "<group>"; };
+		5911BC5C1B4FA22600F93216 /* EmailGetReportRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailGetReportRequest.h; sourceTree = "<group>"; };
+		5911BC5D1B4FA22600F93216 /* EmailGetReportRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailGetReportRequest.m; sourceTree = "<group>"; };
+		5911BC5F1B4FA35700F93216 /* EmailGetReportResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailGetReportResponse.h; sourceTree = "<group>"; };
+		5911BC601B4FA35700F93216 /* EmailGetReportResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailGetReportResponse.m; sourceTree = "<group>"; };
+		5911BC621B4FA4C400F93216 /* EmailUrlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailUrlImpl.h; sourceTree = "<group>"; };
+		5911BC631B4FA4C400F93216 /* EmailUrlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailUrlImpl.m; sourceTree = "<group>"; };
+		5911BC651B4FA54D00F93216 /* EmailResourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EmailResourceImpl.h; sourceTree = "<group>"; };
+		5911BC661B4FA54D00F93216 /* EmailResourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailResourceImpl.m; sourceTree = "<group>"; };
+		5911BC681B4FA75F00F93216 /* EmailTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EmailTests.m; sourceTree = "<group>"; };
+		5911BC6B1B4FABEA00F93216 /* VerifyGetCodeRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyGetCodeRequest.h; sourceTree = "<group>"; };
+		5911BC6C1B4FABEA00F93216 /* VerifyGetCodeRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyGetCodeRequest.m; sourceTree = "<group>"; };
+		5911BC6E1B4FAE0000F93216 /* VerifyGetCodeResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyGetCodeResponse.h; sourceTree = "<group>"; };
+		5911BC6F1B4FAE0000F93216 /* VerifyGetCodeResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyGetCodeResponse.m; sourceTree = "<group>"; };
+		5911BC711B4FAFD400F93216 /* VerifyNumberResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyNumberResponse.h; sourceTree = "<group>"; };
+		5911BC721B4FAFD400F93216 /* VerifyNumberResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyNumberResponse.m; sourceTree = "<group>"; };
+		5911BC741B4FB08700F93216 /* VerifyUrlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyUrlImpl.h; sourceTree = "<group>"; };
+		5911BC751B4FB08700F93216 /* VerifyUrlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyUrlImpl.m; sourceTree = "<group>"; };
+		5911BC771B4FB0FF00F93216 /* VerifyResourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VerifyResourceImpl.h; sourceTree = "<group>"; };
+		5911BC781B4FB0FF00F93216 /* VerifyResourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyResourceImpl.m; sourceTree = "<group>"; };
+		5911BC7A1B4FB29700F93216 /* VerifyTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VerifyTests.m; sourceTree = "<group>"; };
+		5911BC7D1B4FBED300F93216 /* CheckerCheckNumberResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckerCheckNumberResponse.h; sourceTree = "<group>"; };
+		5911BC7E1B4FBED300F93216 /* CheckerCheckNumberResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckerCheckNumberResponse.m; sourceTree = "<group>"; };
+		5911BC801B4FBFC600F93216 /* CheckerUrlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckerUrlImpl.h; sourceTree = "<group>"; };
+		5911BC811B4FBFC600F93216 /* CheckerUrlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckerUrlImpl.m; sourceTree = "<group>"; };
+		5911BC831B4FC02D00F93216 /* CheckerResourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CheckerResourceImpl.h; sourceTree = "<group>"; };
+		5911BC841B4FC02D00F93216 /* CheckerResourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckerResourceImpl.m; sourceTree = "<group>"; };
+		5911BC861B4FC10500F93216 /* CheckerTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CheckerTests.m; sourceTree = "<group>"; };
+		598D9AA61B4CF60B00D7FBD3 /* MessageIDStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageIDStatus.h; sourceTree = "<group>"; };
+		598D9AA71B4CF60B00D7FBD3 /* MessageIDStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageIDStatus.m; sourceTree = "<group>"; };
+		598D9AA91B4D034400D7FBD3 /* MessageDetailsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailsRequest.h; sourceTree = "<group>"; };
+		598D9AAA1B4D034400D7FBD3 /* MessageDetailsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailsRequest.m; sourceTree = "<group>"; };
+		598D9AAC1B4D0AFA00D7FBD3 /* MessageDetailsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailsResponse.h; sourceTree = "<group>"; };
+		598D9AAD1B4D0AFA00D7FBD3 /* MessageDetailsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailsResponse.m; sourceTree = "<group>"; };
+		598D9AAF1B4D0D0100D7FBD3 /* MessageDetailsStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageDetailsStatus.h; sourceTree = "<group>"; };
+		598D9AB01B4D0D0100D7FBD3 /* MessageDetailsStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageDetailsStatus.m; sourceTree = "<group>"; };
+		598D9AB21B4D357100D7FBD3 /* MessageReportRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageReportRequest.h; sourceTree = "<group>"; };
+		598D9AB31B4D357100D7FBD3 /* MessageReportRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageReportRequest.m; sourceTree = "<group>"; };
+		598D9AB51B4D3BD400D7FBD3 /* MessageReportResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageReportResponse.h; sourceTree = "<group>"; };
+		598D9AB61B4D3BD400D7FBD3 /* MessageReportResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageReportResponse.m; sourceTree = "<group>"; };
+		59F843861B4A3D5A00E11484 /* libSmsVoice.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSmsVoice.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F843891B4A3D5A00E11484 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		59F8438D1B4A3D5A00E11484 /* SmsVoice-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SmsVoice-Prefix.pch"; sourceTree = "<group>"; };
+		59F843961B4A3D5B00E11484 /* SmsVoiceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SmsVoiceTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		59F843971B4A3D5B00E11484 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		59F8439A1B4A3D5B00E11484 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		59F843A11B4A3D5B00E11484 /* SmsVoiceTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SmsVoiceTests-Info.plist"; sourceTree = "<group>"; };
+		59F843A31B4A3D5B00E11484 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		59F843A51B4A3D5B00E11484 /* SmsVoiceTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SmsVoiceTests.m; sourceTree = "<group>"; };
+		59F843AF1B4A3FFE00E11484 /* OTSRestResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTSRestResponse.h; sourceTree = "<group>"; };
+		59F843B01B4A3FFE00E11484 /* OTSRestResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTSRestResponse.m; sourceTree = "<group>"; };
+		59F843B21B4A507E00E11484 /* MessagesTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessagesTests.m; sourceTree = "<group>"; };
+		59F843B41B4A5EC900E11484 /* ConstantCallLang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantCallLang.h; sourceTree = "<group>"; };
+		59F843B51B4A5EC900E11484 /* ConstantCallLang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantCallLang.m; sourceTree = "<group>"; };
+		59F843B71B4A5F7D00E11484 /* ConstantCallStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantCallStatus.h; sourceTree = "<group>"; };
+		59F843B81B4A5F7D00E11484 /* ConstantCallStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantCallStatus.m; sourceTree = "<group>"; };
+		59F843BA1B4A606400E11484 /* ConstantDLR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantDLR.h; sourceTree = "<group>"; };
+		59F843BB1B4A606400E11484 /* ConstantDLR.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantDLR.m; sourceTree = "<group>"; };
+		59F843BD1B4A619600E11484 /* ConstantEmailStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantEmailStatus.h; sourceTree = "<group>"; };
+		59F843BE1B4A619600E11484 /* ConstantEmailStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantEmailStatus.m; sourceTree = "<group>"; };
+		59F843C01B4A622A00E11484 /* ConstantMessageStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantMessageStatus.h; sourceTree = "<group>"; };
+		59F843C11B4A622A00E11484 /* ConstantMessageStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantMessageStatus.m; sourceTree = "<group>"; };
+		59F843C31B4A630700E11484 /* ConstantParam.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConstantParam.h; sourceTree = "<group>"; };
+		59F843C41B4A630700E11484 /* ConstantParam.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConstantParam.m; sourceTree = "<group>"; };
+		59F843C61B4A67F700E11484 /* ModelARequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelARequest.h; sourceTree = "<group>"; };
+		59F843C71B4A67F700E11484 /* ModelARequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelARequest.m; sourceTree = "<group>"; };
+		59F843C91B4A6A4C00E11484 /* ModelResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ModelResponse.h; sourceTree = "<group>"; };
+		59F843CA1B4A6A4C00E11484 /* ModelResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ModelResponse.m; sourceTree = "<group>"; };
+		59F843D71B4A7CB100E11484 /* CallRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallRequest.h; sourceTree = "<group>"; };
+		59F843D81B4A7CB100E11484 /* CallRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallRequest.m; sourceTree = "<group>"; };
+		59F843DA1B4A7D3900E11484 /* CallResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallResponse.h; sourceTree = "<group>"; };
+		59F843DB1B4A7D3900E11484 /* CallResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallResponse.m; sourceTree = "<group>"; };
+		59F843DD1B4A7ED800E11484 /* CallStatusResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallStatusResponse.h; sourceTree = "<group>"; };
+		59F843DE1B4A7ED800E11484 /* CallStatusResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallStatusResponse.m; sourceTree = "<group>"; };
+		59F843E01B4A800700E11484 /* CallsDetailsRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallsDetailsRequest.h; sourceTree = "<group>"; };
+		59F843E11B4A800700E11484 /* CallsDetailsRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallsDetailsRequest.m; sourceTree = "<group>"; };
+		59F843E31B4A804C00E11484 /* CallsDetailsResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallsDetailsResponse.h; sourceTree = "<group>"; };
+		59F843E41B4A804C00E11484 /* CallsDetailsResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallsDetailsResponse.m; sourceTree = "<group>"; };
+		59F843E71B4A84A100E11484 /* MessageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageResponse.h; sourceTree = "<group>"; };
+		59F843E81B4A84A100E11484 /* MessageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageResponse.m; sourceTree = "<group>"; };
+		59F843EA1B4A85B400E11484 /* MessageRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageRequest.h; sourceTree = "<group>"; };
+		59F843EB1B4A85B400E11484 /* MessageRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageRequest.m; sourceTree = "<group>"; };
+		59F843F31B4BD1FA00E11484 /* MessageResourceImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageResourceImpl.h; sourceTree = "<group>"; };
+		59F843F41B4BD1FA00E11484 /* MessageResourceImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageResourceImpl.m; sourceTree = "<group>"; };
+		59F843F71B4BD33100E11484 /* MessageUrlImpl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MessageUrlImpl.h; sourceTree = "<group>"; };
+		59F843F81B4BD33100E11484 /* MessageUrlImpl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MessageUrlImpl.m; sourceTree = "<group>"; };
+		59F843FA1B4BD79000E11484 /* AResource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AResource.h; sourceTree = "<group>"; };
+		59F843FB1B4BD79000E11484 /* AResource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AResource.m; sourceTree = "<group>"; };
+		59F843FD1B4BD7FE00E11484 /* HttpSender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpSender.h; sourceTree = "<group>"; };
+		59F843FE1B4BD7FE00E11484 /* HttpSender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpSender.m; sourceTree = "<group>"; };
+		59F844011B4C310700E11484 /* JsonParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JsonParser.h; sourceTree = "<group>"; };
+		59F844021B4C310700E11484 /* JsonParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JsonParser.m; sourceTree = "<group>"; };
+		59F844041B4C659E00E11484 /* BulkRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulkRequest.h; sourceTree = "<group>"; };
+		59F844051B4C659E00E11484 /* BulkRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulkRequest.m; sourceTree = "<group>"; };
+		59F844071B4C6BA900E11484 /* BulkResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulkResponse.h; sourceTree = "<group>"; };
+		59F844081B4C6BA900E11484 /* BulkResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulkResponse.m; sourceTree = "<group>"; };
+		59F8440A1B4C6E0400E11484 /* BulkMessageStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BulkMessageStatus.h; sourceTree = "<group>"; };
+		59F8440B1B4C6E0400E11484 /* BulkMessageStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BulkMessageStatus.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		59F843831B4A3D5A00E11484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F8438A1B4A3D5A00E11484 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F843931B4A3D5B00E11484 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F8439E1B4A3D5B00E11484 /* libSmsVoice.a in Frameworks */,
+				59F843981B4A3D5B00E11484 /* XCTest.framework in Frameworks */,
+				59F8439B1B4A3D5B00E11484 /* UIKit.framework in Frameworks */,
+				59F843991B4A3D5B00E11484 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5911BC551B4FA04400F93216 /* Email */ = {
+			isa = PBXGroup;
+			children = (
+				5911BC561B4FA06500F93216 /* EmailSendRequest.h */,
+				5911BC571B4FA06500F93216 /* EmailSendRequest.m */,
+				5911BC591B4FA10500F93216 /* EmailSendResponse.h */,
+				5911BC5A1B4FA10500F93216 /* EmailSendResponse.m */,
+				5911BC5C1B4FA22600F93216 /* EmailGetReportRequest.h */,
+				5911BC5D1B4FA22600F93216 /* EmailGetReportRequest.m */,
+				5911BC5F1B4FA35700F93216 /* EmailGetReportResponse.h */,
+				5911BC601B4FA35700F93216 /* EmailGetReportResponse.m */,
+			);
+			name = Email;
+			sourceTree = "<group>";
+		};
+		5911BC6A1B4FABD700F93216 /* Verify */ = {
+			isa = PBXGroup;
+			children = (
+				5911BC6B1B4FABEA00F93216 /* VerifyGetCodeRequest.h */,
+				5911BC6C1B4FABEA00F93216 /* VerifyGetCodeRequest.m */,
+				5911BC6E1B4FAE0000F93216 /* VerifyGetCodeResponse.h */,
+				5911BC6F1B4FAE0000F93216 /* VerifyGetCodeResponse.m */,
+				5911BC711B4FAFD400F93216 /* VerifyNumberResponse.h */,
+				5911BC721B4FAFD400F93216 /* VerifyNumberResponse.m */,
+			);
+			name = Verify;
+			sourceTree = "<group>";
+		};
+		5911BC7C1B4FBE7F00F93216 /* Checker */ = {
+			isa = PBXGroup;
+			children = (
+				5911BC7D1B4FBED300F93216 /* CheckerCheckNumberResponse.h */,
+				5911BC7E1B4FBED300F93216 /* CheckerCheckNumberResponse.m */,
+			);
+			name = Checker;
+			sourceTree = "<group>";
+		};
+		59F8437D1B4A3D5A00E11484 = {
+			isa = PBXGroup;
+			children = (
+				59F8438B1B4A3D5A00E11484 /* SmsVoice */,
+				59F8439F1B4A3D5B00E11484 /* SmsVoiceTests */,
+				59F843881B4A3D5A00E11484 /* Frameworks */,
+				59F843871B4A3D5A00E11484 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		59F843871B4A3D5A00E11484 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				59F843861B4A3D5A00E11484 /* libSmsVoice.a */,
+				59F843961B4A3D5B00E11484 /* SmsVoiceTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		59F843881B4A3D5A00E11484 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				59F843891B4A3D5A00E11484 /* Foundation.framework */,
+				59F843971B4A3D5B00E11484 /* XCTest.framework */,
+				59F8439A1B4A3D5B00E11484 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		59F8438B1B4A3D5A00E11484 /* SmsVoice */ = {
+			isa = PBXGroup;
+			children = (
+				59F844001B4C30F900E11484 /* Parser */,
+				59F843F11B4BD1D500E11484 /* Resources */,
+				59F843D21B4A792600E11484 /* Model */,
+				59F843D11B4A790D00E11484 /* Constant */,
+				59F8438C1B4A3D5A00E11484 /* Supporting Files */,
+				59F843AF1B4A3FFE00E11484 /* OTSRestResponse.h */,
+				59F843B01B4A3FFE00E11484 /* OTSRestResponse.m */,
+				59F843FD1B4BD7FE00E11484 /* HttpSender.h */,
+				59F843FE1B4BD7FE00E11484 /* HttpSender.m */,
+			);
+			path = SmsVoice;
+			sourceTree = "<group>";
+		};
+		59F8438C1B4A3D5A00E11484 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59F8438D1B4A3D5A00E11484 /* SmsVoice-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59F8439F1B4A3D5B00E11484 /* SmsVoiceTests */ = {
+			isa = PBXGroup;
+			children = (
+				59F843B21B4A507E00E11484 /* MessagesTests.m */,
+				59067E8D1B4E56F30068304A /* AccountTests.m */,
+				59F843A51B4A3D5B00E11484 /* SmsVoiceTests.m */,
+				59F843A01B4A3D5B00E11484 /* Supporting Files */,
+				5911BC501B4F7B0400F93216 /* CallTests.m */,
+				5911BC681B4FA75F00F93216 /* EmailTests.m */,
+				5911BC7A1B4FB29700F93216 /* VerifyTests.m */,
+				5911BC861B4FC10500F93216 /* CheckerTests.m */,
+			);
+			path = SmsVoiceTests;
+			sourceTree = "<group>";
+		};
+		59F843A01B4A3D5B00E11484 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				59F843A11B4A3D5B00E11484 /* SmsVoiceTests-Info.plist */,
+				59F843A21B4A3D5B00E11484 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		59F843D01B4A78B200E11484 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				59067E6F1B4E35F80068304A /* AccountGetBalance.h */,
+				59067E701B4E35F80068304A /* AccountGetBalance.m */,
+				59067E781B4E46150068304A /* AccountAddSenderID.h */,
+				59067E791B4E46150068304A /* AccountAddSenderID.m */,
+				59067E7B1B4E48AD0068304A /* AccountGetSenderIDStatus.h */,
+				59067E7C1B4E48AD0068304A /* AccountGetSenderIDStatus.m */,
+				59067E7E1B4E49610068304A /* AccountGetSenderIDs.h */,
+				59067E7F1B4E49610068304A /* AccountGetSenderIDs.m */,
+				59067E811B4E4A700068304A /* AccountDeleteSenderID.h */,
+				59067E821B4E4A700068304A /* AccountDeleteSenderID.m */,
+				59067E841B4E4C2B0068304A /* AccountGetAppDefaultSenderID.h */,
+				59067E851B4E4C2B0068304A /* AccountGetAppDefaultSenderID.m */,
+				59067E871B4E4C810068304A /* AccountChangeAppDefaultSenderID.h */,
+				59067E881B4E4C810068304A /* AccountChangeAppDefaultSenderID.m */,
+				59067E8F1B4E5CCB0068304A /* AccountGetSenderIDResponse.h */,
+				59067E901B4E5CCB0068304A /* AccountGetSenderIDResponse.m */,
+			);
+			name = Account;
+			sourceTree = "<group>";
+		};
+		59F843D11B4A790D00E11484 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				59F843B41B4A5EC900E11484 /* ConstantCallLang.h */,
+				59F843B51B4A5EC900E11484 /* ConstantCallLang.m */,
+				59F843B71B4A5F7D00E11484 /* ConstantCallStatus.h */,
+				59F843B81B4A5F7D00E11484 /* ConstantCallStatus.m */,
+				59F843BA1B4A606400E11484 /* ConstantDLR.h */,
+				59F843BB1B4A606400E11484 /* ConstantDLR.m */,
+				59F843BD1B4A619600E11484 /* ConstantEmailStatus.h */,
+				59F843BE1B4A619600E11484 /* ConstantEmailStatus.m */,
+				59F843C01B4A622A00E11484 /* ConstantMessageStatus.h */,
+				59F843C11B4A622A00E11484 /* ConstantMessageStatus.m */,
+				59F843C31B4A630700E11484 /* ConstantParam.h */,
+				59F843C41B4A630700E11484 /* ConstantParam.m */,
+			);
+			name = Constant;
+			sourceTree = "<group>";
+		};
+		59F843D21B4A792600E11484 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5911BC7C1B4FBE7F00F93216 /* Checker */,
+				5911BC6A1B4FABD700F93216 /* Verify */,
+				5911BC551B4FA04400F93216 /* Email */,
+				59F843E61B4A848D00E11484 /* Messages */,
+				59F843D61B4A7C9600E11484 /* Call */,
+				59F843D01B4A78B200E11484 /* Account */,
+				59F843C61B4A67F700E11484 /* ModelARequest.h */,
+				59F843C71B4A67F700E11484 /* ModelARequest.m */,
+				59F843C91B4A6A4C00E11484 /* ModelResponse.h */,
+				59F843CA1B4A6A4C00E11484 /* ModelResponse.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		59F843D61B4A7C9600E11484 /* Call */ = {
+			isa = PBXGroup;
+			children = (
+				59F843D71B4A7CB100E11484 /* CallRequest.h */,
+				59F843D81B4A7CB100E11484 /* CallRequest.m */,
+				59F843DA1B4A7D3900E11484 /* CallResponse.h */,
+				59F843DB1B4A7D3900E11484 /* CallResponse.m */,
+				59F843DD1B4A7ED800E11484 /* CallStatusResponse.h */,
+				59F843DE1B4A7ED800E11484 /* CallStatusResponse.m */,
+				59F843E01B4A800700E11484 /* CallsDetailsRequest.h */,
+				59F843E11B4A800700E11484 /* CallsDetailsRequest.m */,
+				59F843E31B4A804C00E11484 /* CallsDetailsResponse.h */,
+				59F843E41B4A804C00E11484 /* CallsDetailsResponse.m */,
+				5911BC381B4F39AD00F93216 /* CallsDetailsData.h */,
+				5911BC391B4F39AD00F93216 /* CallsDetailsData.m */,
+				5911BC3B1B4F3CF900F93216 /* CallTTSRequest.h */,
+				5911BC3C1B4F3CF900F93216 /* CallTTSRequest.m */,
+				5911BC3E1B4F40A600F93216 /* CallTTSResponse.h */,
+				5911BC3F1B4F40A600F93216 /* CallTTSResponse.m */,
+				5911BC411B4F45B300F93216 /* CallGetScheduledRequest.h */,
+				5911BC421B4F45B300F93216 /* CallGetScheduledRequest.m */,
+				5911BC441B4F471600F93216 /* CallGetScheduledResponse.h */,
+				5911BC451B4F471600F93216 /* CallGetScheduledResponse.m */,
+				5911BC471B4F495800F93216 /* CallStopScheduledResponse.h */,
+				5911BC481B4F495800F93216 /* CallStopScheduledResponse.m */,
+			);
+			name = Call;
+			sourceTree = "<group>";
+		};
+		59F843E61B4A848D00E11484 /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				59F843E71B4A84A100E11484 /* MessageResponse.h */,
+				59F843E81B4A84A100E11484 /* MessageResponse.m */,
+				59F843EA1B4A85B400E11484 /* MessageRequest.h */,
+				59F843EB1B4A85B400E11484 /* MessageRequest.m */,
+				59F844041B4C659E00E11484 /* BulkRequest.h */,
+				59F844051B4C659E00E11484 /* BulkRequest.m */,
+				59F844071B4C6BA900E11484 /* BulkResponse.h */,
+				59F844081B4C6BA900E11484 /* BulkResponse.m */,
+				59F8440A1B4C6E0400E11484 /* BulkMessageStatus.h */,
+				59F8440B1B4C6E0400E11484 /* BulkMessageStatus.m */,
+				598D9AA61B4CF60B00D7FBD3 /* MessageIDStatus.h */,
+				598D9AA71B4CF60B00D7FBD3 /* MessageIDStatus.m */,
+				598D9AA91B4D034400D7FBD3 /* MessageDetailsRequest.h */,
+				598D9AAA1B4D034400D7FBD3 /* MessageDetailsRequest.m */,
+				598D9AAC1B4D0AFA00D7FBD3 /* MessageDetailsResponse.h */,
+				598D9AAD1B4D0AFA00D7FBD3 /* MessageDetailsResponse.m */,
+				598D9AAF1B4D0D0100D7FBD3 /* MessageDetailsStatus.h */,
+				598D9AB01B4D0D0100D7FBD3 /* MessageDetailsStatus.m */,
+				598D9AB21B4D357100D7FBD3 /* MessageReportRequest.h */,
+				598D9AB31B4D357100D7FBD3 /* MessageReportRequest.m */,
+				598D9AB51B4D3BD400D7FBD3 /* MessageReportResponse.h */,
+				598D9AB61B4D3BD400D7FBD3 /* MessageReportResponse.m */,
+				59067E631B4E20260068304A /* MessageGetScheduledResponse.h */,
+				59067E641B4E20260068304A /* MessageGetScheduledResponse.m */,
+				59067E661B4E21440068304A /* MessageDetailGetScheduled.h */,
+				59067E671B4E21440068304A /* MessageDetailGetScheduled.m */,
+				59067E691B4E23AF0068304A /* MessageGetScheduledRequest.h */,
+				59067E6A1B4E23AF0068304A /* MessageGetScheduledRequest.m */,
+				59067E6C1B4E2C3E0068304A /* MessageStopScheduled.h */,
+				59067E6D1B4E2C3E0068304A /* MessageStopScheduled.m */,
+			);
+			name = Messages;
+			sourceTree = "<group>";
+		};
+		59F843F11B4BD1D500E11484 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				59F843F61B4BD31B00E11484 /* Url */,
+				59F843F21B4BD1DC00E11484 /* Http */,
+				59F843FA1B4BD79000E11484 /* AResource.h */,
+				59F843FB1B4BD79000E11484 /* AResource.m */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		59F843F21B4BD1DC00E11484 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+				59F843F31B4BD1FA00E11484 /* MessageResourceImpl.h */,
+				59F843F41B4BD1FA00E11484 /* MessageResourceImpl.m */,
+				59067E751B4E44870068304A /* AccountResourceImpl.h */,
+				59067E761B4E44870068304A /* AccountResourceImpl.m */,
+				5911BC4D1B4F540300F93216 /* CallResourceImpl.h */,
+				5911BC4E1B4F540300F93216 /* CallResourceImpl.m */,
+				5911BC651B4FA54D00F93216 /* EmailResourceImpl.h */,
+				5911BC661B4FA54D00F93216 /* EmailResourceImpl.m */,
+				5911BC771B4FB0FF00F93216 /* VerifyResourceImpl.h */,
+				5911BC781B4FB0FF00F93216 /* VerifyResourceImpl.m */,
+				5911BC831B4FC02D00F93216 /* CheckerResourceImpl.h */,
+				5911BC841B4FC02D00F93216 /* CheckerResourceImpl.m */,
+			);
+			name = Http;
+			sourceTree = "<group>";
+		};
+		59F843F61B4BD31B00E11484 /* Url */ = {
+			isa = PBXGroup;
+			children = (
+				59F843F71B4BD33100E11484 /* MessageUrlImpl.h */,
+				59F843F81B4BD33100E11484 /* MessageUrlImpl.m */,
+				59067E721B4E42980068304A /* AccountUrlImpl.h */,
+				59067E731B4E42980068304A /* AccountUrlImpl.m */,
+				5911BC4A1B4F4F1A00F93216 /* CallUrlImpl.h */,
+				5911BC4B1B4F4F1A00F93216 /* CallUrlImpl.m */,
+				5911BC621B4FA4C400F93216 /* EmailUrlImpl.h */,
+				5911BC631B4FA4C400F93216 /* EmailUrlImpl.m */,
+				5911BC741B4FB08700F93216 /* VerifyUrlImpl.h */,
+				5911BC751B4FB08700F93216 /* VerifyUrlImpl.m */,
+				5911BC801B4FBFC600F93216 /* CheckerUrlImpl.h */,
+				5911BC811B4FBFC600F93216 /* CheckerUrlImpl.m */,
+			);
+			name = Url;
+			sourceTree = "<group>";
+		};
+		59F844001B4C30F900E11484 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				59F844011B4C310700E11484 /* JsonParser.h */,
+				59F844021B4C310700E11484 /* JsonParser.m */,
+			);
+			name = Parser;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		59F843851B4A3D5A00E11484 /* SmsVoice */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F843A91B4A3D5B00E11484 /* Build configuration list for PBXNativeTarget "SmsVoice" */;
+			buildPhases = (
+				59F843821B4A3D5A00E11484 /* Sources */,
+				59F843831B4A3D5A00E11484 /* Frameworks */,
+				59F843841B4A3D5A00E11484 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SmsVoice;
+			productName = SmsVoice;
+			productReference = 59F843861B4A3D5A00E11484 /* libSmsVoice.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		59F843951B4A3D5B00E11484 /* SmsVoiceTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 59F843AC1B4A3D5B00E11484 /* Build configuration list for PBXNativeTarget "SmsVoiceTests" */;
+			buildPhases = (
+				59F843921B4A3D5B00E11484 /* Sources */,
+				59F843931B4A3D5B00E11484 /* Frameworks */,
+				59F843941B4A3D5B00E11484 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				59F8439D1B4A3D5B00E11484 /* PBXTargetDependency */,
+			);
+			name = SmsVoiceTests;
+			productName = SmsVoiceTests;
+			productReference = 59F843961B4A3D5B00E11484 /* SmsVoiceTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		59F8437E1B4A3D5A00E11484 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = legos;
+			};
+			buildConfigurationList = 59F843811B4A3D5A00E11484 /* Build configuration list for PBXProject "SmsVoice" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 59F8437D1B4A3D5A00E11484;
+			productRefGroup = 59F843871B4A3D5A00E11484 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				59F843851B4A3D5A00E11484 /* SmsVoice */,
+				59F843951B4A3D5B00E11484 /* SmsVoiceTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		59F843941B4A3D5B00E11484 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				59F843A41B4A3D5B00E11484 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		59F843821B4A3D5A00E11484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5911BC611B4FA35700F93216 /* EmailGetReportResponse.m in Sources */,
+				5911BC731B4FAFD400F93216 /* VerifyNumberResponse.m in Sources */,
+				5911BC401B4F40A600F93216 /* CallTTSResponse.m in Sources */,
+				598D9AB11B4D0D0100D7FBD3 /* MessageDetailsStatus.m in Sources */,
+				5911BC581B4FA06500F93216 /* EmailSendRequest.m in Sources */,
+				59F843BF1B4A619600E11484 /* ConstantEmailStatus.m in Sources */,
+				59F843DC1B4A7D3900E11484 /* CallResponse.m in Sources */,
+				5911BC7F1B4FBED300F93216 /* CheckerCheckNumberResponse.m in Sources */,
+				59067E891B4E4C810068304A /* AccountChangeAppDefaultSenderID.m in Sources */,
+				5911BC5B1B4FA10500F93216 /* EmailSendResponse.m in Sources */,
+				59F843CB1B4A6A4C00E11484 /* ModelResponse.m in Sources */,
+				59F843C21B4A622A00E11484 /* ConstantMessageStatus.m in Sources */,
+				59F843B91B4A5F7D00E11484 /* ConstantCallStatus.m in Sources */,
+				59F843BC1B4A606400E11484 /* ConstantDLR.m in Sources */,
+				59F843F91B4BD33100E11484 /* MessageUrlImpl.m in Sources */,
+				59067E741B4E42980068304A /* AccountUrlImpl.m in Sources */,
+				5911BC491B4F495800F93216 /* CallStopScheduledResponse.m in Sources */,
+				5911BC671B4FA54D00F93216 /* EmailResourceImpl.m in Sources */,
+				59067E831B4E4A700068304A /* AccountDeleteSenderID.m in Sources */,
+				59067E7D1B4E48AD0068304A /* AccountGetSenderIDStatus.m in Sources */,
+				59067E771B4E44870068304A /* AccountResourceImpl.m in Sources */,
+				59067E801B4E49610068304A /* AccountGetSenderIDs.m in Sources */,
+				598D9AB41B4D357100D7FBD3 /* MessageReportRequest.m in Sources */,
+				59067E681B4E21440068304A /* MessageDetailGetScheduled.m in Sources */,
+				59067E911B4E5CCB0068304A /* AccountGetSenderIDResponse.m in Sources */,
+				59F843D91B4A7CB100E11484 /* CallRequest.m in Sources */,
+				5911BC791B4FB0FF00F93216 /* VerifyResourceImpl.m in Sources */,
+				59F843C51B4A630700E11484 /* ConstantParam.m in Sources */,
+				5911BC6D1B4FABEA00F93216 /* VerifyGetCodeRequest.m in Sources */,
+				59F844091B4C6BA900E11484 /* BulkResponse.m in Sources */,
+				5911BC461B4F471600F93216 /* CallGetScheduledResponse.m in Sources */,
+				59067E6E1B4E2C3E0068304A /* MessageStopScheduled.m in Sources */,
+				5911BC4F1B4F540300F93216 /* CallResourceImpl.m in Sources */,
+				5911BC4C1B4F4F1A00F93216 /* CallUrlImpl.m in Sources */,
+				5911BC851B4FC02D00F93216 /* CheckerResourceImpl.m in Sources */,
+				59F843F51B4BD1FA00E11484 /* MessageResourceImpl.m in Sources */,
+				59F8440C1B4C6E0400E11484 /* BulkMessageStatus.m in Sources */,
+				5911BC761B4FB08700F93216 /* VerifyUrlImpl.m in Sources */,
+				5911BC5E1B4FA22600F93216 /* EmailGetReportRequest.m in Sources */,
+				59F843C81B4A67F700E11484 /* ModelARequest.m in Sources */,
+				59F843DF1B4A7ED800E11484 /* CallStatusResponse.m in Sources */,
+				59067E6B1B4E23AF0068304A /* MessageGetScheduledRequest.m in Sources */,
+				5911BC641B4FA4C400F93216 /* EmailUrlImpl.m in Sources */,
+				59F844061B4C659E00E11484 /* BulkRequest.m in Sources */,
+				59067E711B4E35F80068304A /* AccountGetBalance.m in Sources */,
+				59F843B61B4A5EC900E11484 /* ConstantCallLang.m in Sources */,
+				59F843FF1B4BD7FE00E11484 /* HttpSender.m in Sources */,
+				5911BC3A1B4F39AD00F93216 /* CallsDetailsData.m in Sources */,
+				59F843FC1B4BD79000E11484 /* AResource.m in Sources */,
+				59F843B11B4A3FFE00E11484 /* OTSRestResponse.m in Sources */,
+				59F843EC1B4A85B400E11484 /* MessageRequest.m in Sources */,
+				598D9AAE1B4D0AFA00D7FBD3 /* MessageDetailsResponse.m in Sources */,
+				59F843E91B4A84A100E11484 /* MessageResponse.m in Sources */,
+				598D9AAB1B4D034400D7FBD3 /* MessageDetailsRequest.m in Sources */,
+				5911BC431B4F45B300F93216 /* CallGetScheduledRequest.m in Sources */,
+				59F843E21B4A800700E11484 /* CallsDetailsRequest.m in Sources */,
+				59F844031B4C310700E11484 /* JsonParser.m in Sources */,
+				59067E7A1B4E46150068304A /* AccountAddSenderID.m in Sources */,
+				598D9AB71B4D3BD400D7FBD3 /* MessageReportResponse.m in Sources */,
+				5911BC3D1B4F3CF900F93216 /* CallTTSRequest.m in Sources */,
+				59067E651B4E20260068304A /* MessageGetScheduledResponse.m in Sources */,
+				598D9AA81B4CF60B00D7FBD3 /* MessageIDStatus.m in Sources */,
+				5911BC701B4FAE0000F93216 /* VerifyGetCodeResponse.m in Sources */,
+				59067E861B4E4C2B0068304A /* AccountGetAppDefaultSenderID.m in Sources */,
+				59F843E51B4A804C00E11484 /* CallsDetailsResponse.m in Sources */,
+				5911BC821B4FBFC600F93216 /* CheckerUrlImpl.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59F843921B4A3D5B00E11484 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5911BC7B1B4FB29700F93216 /* VerifyTests.m in Sources */,
+				59F843A61B4A3D5B00E11484 /* SmsVoiceTests.m in Sources */,
+				5911BC511B4F7B0400F93216 /* CallTests.m in Sources */,
+				5911BC871B4FC10500F93216 /* CheckerTests.m in Sources */,
+				59F843B31B4A507E00E11484 /* MessagesTests.m in Sources */,
+				5911BC691B4FA75F00F93216 /* EmailTests.m in Sources */,
+				59067E8E1B4E56F30068304A /* AccountTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		59F8439D1B4A3D5B00E11484 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 59F843851B4A3D5A00E11484 /* SmsVoice */;
+			targetProxy = 59F8439C1B4A3D5B00E11484 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		59F843A21B4A3D5B00E11484 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				59F843A31B4A3D5B00E11484 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		59F843A71B4A3D5B00E11484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		59F843A81B4A3D5B00E11484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		59F843AA1B4A3D5B00E11484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SmsVoice.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmsVoice/SmsVoice-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		59F843AB1B4A3D5B00E11484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/SmsVoice.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmsVoice/SmsVoice-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		59F843AD1B4A3D5B00E11484 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmsVoice/SmsVoice-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SmsVoiceTests/SmsVoiceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		59F843AE1B4A3D5B00E11484 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SmsVoice/SmsVoice-Prefix.pch";
+				INFOPLIST_FILE = "SmsVoiceTests/SmsVoiceTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		59F843811B4A3D5A00E11484 /* Build configuration list for PBXProject "SmsVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F843A71B4A3D5B00E11484 /* Debug */,
+				59F843A81B4A3D5B00E11484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59F843A91B4A3D5B00E11484 /* Build configuration list for PBXNativeTarget "SmsVoice" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F843AA1B4A3D5B00E11484 /* Debug */,
+				59F843AB1B4A3D5B00E11484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		59F843AC1B4A3D5B00E11484 /* Build configuration list for PBXNativeTarget "SmsVoiceTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				59F843AD1B4A3D5B00E11484 /* Debug */,
+				59F843AE1B4A3D5B00E11484 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 59F8437E1B4A3D5A00E11484 /* Project object */;
+}
