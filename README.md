@@ -4,8 +4,7 @@ A simple HTTP based RESTful API library will enable your apps to send emails and
 
 ## Installation
 
-```
-If you want to compile it yourself, here's how:
+If you want to compile it yourself, here's the source:
 ```
 $ git clone https://github.com/otsdc/SMS-Voice-iOSSDK
 ```
@@ -13,22 +12,22 @@ $ git clone https://github.com/otsdc/SMS-Voice-iOSSDK
 ## Example
 
 Here is the example to Use Message API
-```
 
-import <XCTest/XCTest.h>
-import "OTSRestResponse.h"
-import "MessageResourceImpl.h"
-import "MessageResponse.h"
-import "BulkRequest.h"
-import "BulkResponse.h"
-import "BulkMessageStatus.h"
-import "MessageIDStatus.h"
-import "MessageDetailsRequest.h"
-import "MessageDetailsStatus.h"
-import "ConstantParam.h"
-import "ConstantMessageStatus.h"
-import "MessageDetailGetScheduled.h"
-import "MessageStopScheduled.h"
+```
+#import <XCTest/XCTest.h>
+#import "OTSRestResponse.h"
+#import "MessageResourceImpl.h"
+#import "MessageResponse.h"
+#import "BulkRequest.h"
+#import "BulkResponse.h"
+#import "BulkMessageStatus.h"
+#import "MessageIDStatus.h"
+#import "MessageDetailsRequest.h"
+#import "MessageDetailsStatus.h"
+#import "ConstantParam.h"
+#import "ConstantMessageStatus.h"
+#import "MessageDetailGetScheduled.h"
+#import "MessageStopScheduled.h"
 
 @interface MessageTests : XCTestCase
 
