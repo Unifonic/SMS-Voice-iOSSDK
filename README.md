@@ -1,14 +1,19 @@
-OTS REST API for iOS
+# OTS REST API for Java 
 
-A simple HTTP based RESTful API library will enable your apps to send emails and sms messages, make phone calls, and setup two-factor authentication through OTS Cloud Communication Platform
-Installation
+A simple HTTP based RESTful API library will enable your apps to send emails and sms messages, make phone calls, and setup two-factor authentication through [OTS Cloud Communication Platform] (http://www.otsdc.com/en/site/login)
 
+## Installation
+
+```
 If you want to compile it yourself, here's how:
+```
 $ git clone https://github.com/otsdc/SMS-Voice-iOSSDK
+```
 
-Example
+## Example
 
 Here is the example to Use Message API
+```
 
 import <XCTest/XCTest.h>
 import "OTSRestResponse.h"
