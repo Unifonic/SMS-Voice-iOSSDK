@@ -1,6 +1,6 @@
 # REST API for iOS 
 
-A simple HTTP based RESTful API library will enable your apps to send emails and sms messages, make phone calls, and setup two-factor authentication through [OTS Cloud Communication Platform] (http://www.otsdc.com/en/site/login)
+A simple HTTP based RESTful API library will enable your apps to send text messages and make phone calls through [Unifonic Cloud Communication Platform] (http://www.unifonic.com)
 
 ## Installation
 
